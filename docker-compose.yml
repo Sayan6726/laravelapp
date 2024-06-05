@@ -3,9 +3,9 @@ services:
     container_name: laravel-docker
     build: .
     volumes:
-    - ./laravel-app:/var/www/html
+    - ./laravel-app:/var/www
     ports: 
-    - 8001:8001
+    - 8081:80
 
   mysql_db:
     image: mysql:latest
